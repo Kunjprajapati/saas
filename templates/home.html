@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block title_block %}
+    Home Page
+{% endblock title_block %}
+
+
+
+{% block blockName %}
+    <p>Text Fetched From home.html</p>
+    <!-- Checking Whether the User is authenticated or Not! -->
+    User Verification Notification: <b>{% include 'snippets/welcome-user-msg.html' %}</b>
+
+    <!-- Implementing the number of counts for the user visits -->
+    <ls>User Page (Query) Counts: {{PageCounts}}</ls> <br>
+    <ls>Total (Query) Counts: {{TotalCounts}}</ls>
+{% endblock blockName %}
+
